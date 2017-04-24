@@ -1,0 +1,31 @@
+@model IEnumerable<FirstAspNetCore.Models.Person>
+
+@{
+    ViewData["Title"]="List persons";
+}
+
+<h2>List Persons</h2>
+
+<br/>
+
+<table class="table">
+<thead>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>Birthday</th>
+    <th>Pesel</th>
+</thead>
+<tbody>
+@foreach(var item in Model)
+{
+    <tr>
+        <td>@item.ID</td>
+        <td>@item.Name</td>
+        <td>@item.Surname</td>
+        <td>@item.Birthday</td>
+        <td>@item.Pesel</td>
+    </tr>
+}
+</tbody>
+</table>
