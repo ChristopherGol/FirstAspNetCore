@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Iteration";
+}
+
+<h2>Iteration</h2>
+
+<ul>
+
+    @for(int i=(int)ViewData["from"];i<(int)ViewData["to"];i++)
+    {
+        <li>@i</li>
+    }
+
+</ul>
